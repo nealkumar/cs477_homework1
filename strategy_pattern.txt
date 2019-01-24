@@ -1,5 +1,9 @@
 -One could argue that AdapterPattern is not "really" a design pattern (or at least anything new)
 
+STRATEGY PATTERN
+Homework: You MUST use a strategy pattern... cannot just use conditionals
+Summary: Remember Airport example
+
 -Intent
 	-Define a family of algorithims, encapsulate each one, and make them interchangeable. 
 	 Strategy lets the algorithm vary independently from the clients that it (Go4)
@@ -24,6 +28,8 @@
 	-Implicit - computer automatically chooses based on pre-determined parameters
 		-Created something that can run on multiple browsers... depending on client's browser, you then pull in that "strategy"
 			-If a client is using Chrome... pull Chrome Strategy. Still doing the same thing... but just adapted to Chrome
+
+-You use ABSTRACT sub-classses... see notes in white JCU notebook
 
 
 -OBJECT-ORIENTED programming gets rid of conditional statements! In the end at least...
