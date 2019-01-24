@@ -1,0 +1,32 @@
+-One could argue that AdapterPattern is not "really" a design pattern (or at least anything new)
+
+-Intent
+	-Define a family of algorithims, encapsulate each one, and make them interchangeable. 
+	 Strategy lets the algorithm vary independently from the clients that it (Go4)
+		-That means one end says: please sort... other says: i'll select this sorting algo
+		 orithim based on memory, size, performance, etc. (our params)
+
+-Dilemma Strategy
+	-You need to use dynamically "change which algorithim to use"
+		-"Dynamically" means happening DURING the execution of a program (in real time)
+		-"Static" means it happens before execution
+	-You have a (ugly/huge/complex) conditional statement that cooses between actions based on external information
+		-You want to add a new choice... instead of extending the entire conditional, you 
+		 can just use a strategy pattern (via inheritance)
+	-You want to change seamlessly between actions, and be able to extend your choices
+	-Think of it like you're choosing which transportation to take to the airport (car - broke, cab - late, bus - cheap, limo - rich)...
+	 start at your house (start of the program execution), and end of execution is when you arrive
+	-Avoids hard-to-maintain switch statements... runtime selection of algorithim... hides algorithmic structures (in subclasses)... decoupling from client
+-"Decoupled or loosley coupled" : we have 2 things that work together, but there are 2 things that work independently of each other
+-Explicit vs implicit:
+	-Explicit - user gets a choice
+		-5-in-One drill... each (saw, drill bit, etc,) attachment represents a diff. algorithim for 5 diff. functions (no concern over power, time, etc.)
+	-Implicit - computer automatically chooses based on pre-determined parameters
+		-Created something that can run on multiple browsers... depending on client's browser, you then pull in that "strategy"
+			-If a client is using Chrome... pull Chrome Strategy. Still doing the same thing... but just adapted to Chrome
+
+
+-OBJECT-ORIENTED programming gets rid of conditional statements! In the end at least...
+	
+	
+
